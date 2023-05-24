@@ -47,7 +47,7 @@ export const TextInput = (props: Props) => {
                 ref={inputRef as HTMLInputElement}
                 onInput={handleInput}
                 value={inputValue()}
-                placeholder='Type your question'
+                placeholder='Frage eingeben'
             />
             <SendButton type='button' isDisabled={inputValue() === ''} class='my-2 ml-2' on:click={submit}>
                 <span style={{ 'font-family': 'Poppins, sans-serif' }}>Send</span>
